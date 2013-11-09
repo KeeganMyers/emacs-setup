@@ -22,3 +22,6 @@
 [submodule "emacs-live-packs/clojurescript-pack"]
 	path = emacs-live-packs/clojurescript-pack
 	url = https://github.com/ardumont/clojurescript-pack.git
+[submodule "emacs-live-packs/eproject"]
+	path = emacs-live-packs/eproject
+	url = https://github.com/EricGebhart/eproject-pack.git
