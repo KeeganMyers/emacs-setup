@@ -1,0 +1,24 @@
+[submodule "emacs-live-packs/e2wm-pack"]
+	path = emacs-live-packs/e2wm-pack
+	url = https://github.com/EricGebhart/e2wm-pack.git
+[submodule "emacs-live-packs/eproject-pack"]
+	path = emacs-live-packs/eproject-pack
+	url = https://github.com/EricGebhart/eproject-pack.git
+[submodule "emacs-live-packs/evilmode-pack"]
+	path = emacs-live-packs/evilmode-pack
+	url = https://github.com/EricGebhart/evilmode-pack.git
+[submodule "emacs-live-packs/cyclebufs-pack"]
+	path = emacs-live-packs/cyclebufs-pack
+	url = https://github.com/EricGebhart/cyclebufs-pack.git
+[submodule "emacs-live"]
+	path = emacs-live
+	url = https://github.com/overtone/emacs-live.git
+[submodule "emacs-live-packs/helm-ctags-pack"]
+	path = emacs-live-packs/helm-ctags-pack
+	url = https://github.com/EricGebhart/helm-ctags-pack.git
+[submodule "emacs-live-packs/install-packages-pack"]
+	path = emacs-live-packs/install-packages-pack
+	url = https://github.com/ardumont/install-packages-pack.git
+[submodule "emacs-live-packs/clojurescript-pack"]
+	path = emacs-live-packs/clojurescript-pack
+	url = https://github.com/ardumont/clojurescript-pack.git
