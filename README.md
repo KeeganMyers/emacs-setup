@@ -33,13 +33,16 @@ Basic keybindings
 Vi bindings everywhere.
 
 F1 = M-x
+
 f2 = Help
+
+f2 k  = show keybindings for current major and minor modes.
 
 F3 = cycle shell and REPL buffers in the 'sub' pane
 
 F12, S-F12 = contextual cycle of buffers, forward and backwards.
 
-Buffer cycling is contextual, *---* buffers only cycle in the lower pane. non * buffers cycle in the main window pane.
+Buffer cycling is contextual, \*---\* buffers only cycle in the lower pane. non * buffers cycle in the main window pane.
 
 F11 moves the focus between panes.
 
