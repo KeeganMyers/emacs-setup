@@ -3,7 +3,7 @@
 	url = https://github.com/EricGebhart/e2wm-pack.git
 [submodule "emacs-live-packs/eproject-pack"]
 	path = emacs-live-packs/eproject-pack
-	url = https://github.com/EricGebhart/eproject-pack.git
+	url = https://github.com/EricGebhart/eproject-pack
 [submodule "emacs-live-packs/evilmode-pack"]
 	path = emacs-live-packs/evilmode-pack
 	url = https://github.com/EricGebhart/evilmode-pack.git
