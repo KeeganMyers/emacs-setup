@@ -13,6 +13,7 @@
                   "install-packages-pack"
                   "clojurescript-pack"
                   "eproject-pack"
+                  "clojure-cider-pack"
                   ;vi emulation.
                   "evilmode-pack"
                   ;automatic tags.
