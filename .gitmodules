@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 [submodule "emacs-live-packs/e2wm-pack"]
 	path = emacs-live-packs/e2wm-pack
 	url = https://github.com/EricGebhart/e2wm-pack.git
@@ -32,8 +31,3 @@
 [submodule "emacs-live-packs/solarized-pack"]
 	path = emacs-live-packs/solarized-pack
 	url = https://github.com/siancu/solarized-pack.git
-=======
-[submodule "vendor/submodules/solarized-emacs"]
-	path = vendor/submodules/solarized-emacs
-	url = https://github.com/bbatsov/solarized-emacs.git
->>>>>>> def3daa75d87dfcc70c05785f4f4a11564163405
