@@ -28,3 +28,6 @@
 [submodule "emacs-live-packs/clojure-cider-pack"]
 	path = emacs-live-packs/clojure-cider-pack
 	url = https://github.com/EricGebhart/clojure-cider-pack.git
+[submodule "emacs-live-packs/solarized-pack"]
+	path = emacs-live-packs/solarized-pack
+	url = https://github.com/siancu/solarized-pack.git
