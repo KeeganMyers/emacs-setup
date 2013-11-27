@@ -22,4 +22,6 @@
                   "e2wm-pack"
                   ;buffer management and key bindings.
                   "cyclebufs-pack"
+                  ;Solarized theme pack.
+                  "solarized-pack"
                   ))
