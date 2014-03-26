@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+
 emacs-setup
 ======================================================================
 
-My emacs setup.  Emacs live, cider, Evil, eproject, e2wm and some custom stuff.  Plus my keybindings
+My emacs setup.  Emacs live, cider, Evil, eproject, helm+ ctags,  and some custom stuff.  Plus my keybindings
 
 
 install
@@ -15,17 +15,6 @@ install
     make
 
 Make will save a timestamped version of any ~/.emacs-live.el and ~/.emacs.d directory.
-
-
-E2wm
-------------------
-E2wm is an emacs window manager.
-I use the e2wm:dp-code view.
-
-If the window sizes get wonky do
-M-x e2wm:dp-code
-
-F6 will toggle the lower 'sub' pane on and off.
 
 
 Basic keybindings
@@ -51,41 +40,12 @@ F10 opens a file.
 
 F9 kills a buffer.
 
-F6 toggles the lower pane on and off.
-
 Take a look at ~/.emacs.d/emacs-live-packs/cyclebufs-pack/config/keys.el  to see or change the key bindings.
-
 
 Instead of nrepl cider is installed.  If you see instructions to use M-x nrepl-????  try M-x cider-???? instead.
 Cider is the new and improved replacement to nrepl.
 
-M-x cider-jack-in
+M-x cider-jack-in   - or S-F3
 
 Will start a clojure repl and connect to it.
-=======
-# solarized-pack
-
-An [emacs-live](https://github.com/overtone/emacs-live) pack containing the Solarized color theme.
-
-The Solarized theme is taken from [https://github.com/bbatsov/solarized-emacs](https://github.com/bbatsov/solarized-emacs).
-
-## Installing and loading the pack
-
-There are two ways in which the pack can be installed.
-
-### Forked emacs-live
-
-If you already have your own fork of emacs-live, then just add the [solarized-pack]() as a submodule in the packs/dev folder of your emacs-live and then run the `update-live-packs` script so that solarized-pack is added to the live packs.
-
-Afterwards, create a `~/.emacs-live.el` file and use the function `live-add-packs` to load the solarized-pack:
-
-    (live-add-packs '(live/solarized-pack))
-
-### Official emacs-live
-
-If you prefer to use emacs-live from the official repository, then first clone solarized-pack into a folder (for example `~/.live-packs/solarized-pack`).
-
-Then create a `~/.emacs-live.el` file and use the function `live-add-packs` to load the solarized-pack:
-
-    (live-add-packs '(~/.live-packs/solarized-pack))
->>>>>>> def3daa75d87dfcc70c05785f4f4a11564163405
+====
