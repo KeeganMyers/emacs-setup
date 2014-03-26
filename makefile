@@ -12,5 +12,5 @@ install:
 	if [ -a ~/${LIVEFILE} ]; then mv ~/${LIVEFILE} ~/${LIVEFILEBAK}; fi;
 	mkdir ~/${EMACSDIR}
 	cp .emacs-live.el ~/
-	cp -r emacs-live/* ~/${EMACSDIR}/
-	cp -r emacs-live-packs ~/${EMACSDIR}/
+	cp -R emacs-live/* ~/${EMACSDIR}/
+	cp -R emacs-live-packs ~/${EMACSDIR}/
