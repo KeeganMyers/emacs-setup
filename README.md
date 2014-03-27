@@ -10,9 +10,10 @@ Emacs 24 themes
 This setup removes the Colour-theme pack that comes with emacs-live and replaces it with theme-pack
 which uses the newer builtin theme management that comes with emacs 24.
 
-In addition to the default themes, cyberpunk, zenburn, and strange-deeper-blue are included.
+In addition to the default themes, Solarized themes, cyberpunk, zenburn, and strange-deeper-blue are included.
 Along with a large number of themes that have been converted from the old color-theme format.
 
+**__Solarized Dark is the default theme.__**
 
 C-Tags
 ===========
