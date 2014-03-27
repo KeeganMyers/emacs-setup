@@ -1,9 +1,11 @@
-
 emacs-setup
 ======================================================================
 
 My emacs setup.  Emacs live, cider, Evil, eproject, helm+ ctags,  and some custom stuff.  Plus my keybindings
 
+
+Emacs 24 themes
+================
 
 This setup removes the Colour-theme pack that comes with emacs-live and replaces it with theme-pack
 which uses the newer builtin theme management that comes with emacs 24.
@@ -17,15 +19,22 @@ C-Tags
 
 Included is the helm+ ctags pack. This pack uses exuberant ctags instead of etags for file tagging. TAGS files
 are automatically generated and set as you traverse your projects. On OS-X with ctags 5.8 there is an issue which causes
-ctags -e to generate invalid tags files. To fix this 'export CFLAGS=-O0' before doing a 'brew install'. From then on
+ctags -e to generate invalid tags files. To fix this ```export CFLAGS=-O0``` before doing a ```brew install```. From then on
 the find-tags function worked fine.
 
-Also included are some extensions to ido, most notably  'ido-find-tag' and 'ido-find-file-in-tag-files'.
+Also included are some extensions to ido, most notably  ```ido-find-tag``` and ```ido-find-file-in-tag-files```.
 
 Cyclebufs
 ===========
 
-The Cyclebufs pack is a sort of scratch pack. It has cyclebufs, along with other things that haven't made it into other packs yet. I'll likely fix that soon, but for now my key bindings and the ido functions along with a few other things are in that pack. Check ~/.emacs.d/emacs-live-packs/cyclebufs-pack/config/ to see what is there.
+The Cyclebufs pack is a sort of scratch pack. It has cyclebufs, along with other things that haven't made it into other packs yet. I'll likely fix that soon, but for now my key bindings and the ido functions along with a few other things are in that pack. Check ```~/.emacs.d/emacs-live-packs/cyclebufs-pack/config/``` to see what is there.
+
+Git Gutter
+==========
+
+[Git gutter](https://github.com/syohex/emacs-git-gutter) is part of emacs live. But most styles do not define it's settings.
+Read the doc, and make it do what you want.
+
 
 install
 ===========
@@ -36,13 +45,14 @@ install
 
     make
 
+
 Make will save a timestamped version of any ~/.emacs-live.el and ~/.emacs.d directory.
 
 
 Basic keybindings
 ------------------
 
-Vi bindings everywhere.
+Vi bindings everywhere. If you don't like vi turn it off.  ```M-x Evil-mode```
 
 F1 = M-x
 
@@ -70,4 +80,3 @@ Cider is the new and improved replacement to nrepl.
 M-x cider-jack-in   - or S-F3
 
 Will start a clojure repl and connect to it.
-====
