@@ -14,5 +14,5 @@ install:
 	cp .emacs-live.el ~/
 	cp -R emacs-live/* ~/${EMACSDIR}/
 	cp -R emacs-live-packs ~/${EMACSDIR}/
-	rm -rf ~/${EMACSDIR}/emacs-live/packs/stable/colour-pack
-	rm -rf ~/${EMACSDIR}/emacs-live/packs/dev/colour-pack
+	rm -rf ~/${EMACSDIR}/packs/stable/colour-pack
+	rm -rf ~/${EMACSDIR}/packs/dev/colour-pack
