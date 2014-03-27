@@ -19,7 +19,7 @@
                   ;automatic tags.
                   "helm-ctags-pack"
                   ;emacs window manager.
-                  "e2wm-pack"
+                  ;"e2wm-pack"
                   ;buffer management and key bindings.
                   "cyclebufs-pack"
                   ;Solarized theme pack.

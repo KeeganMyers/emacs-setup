@@ -31,3 +31,6 @@
 [submodule "emacs-live-packs/solarized-pack"]
 	path = emacs-live-packs/solarized-pack
 	url = https://github.com/siancu/solarized-pack.git
+[submodule "emacs-live-packs/theme-pack"]
+	path = emacs-live-packs/theme-pack
+	url = https://github.com/EricGebhart/theme-pack.git
