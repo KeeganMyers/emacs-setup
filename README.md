@@ -5,6 +5,28 @@ emacs-setup
 My emacs setup.  Emacs live, cider, Evil, eproject, helm+ ctags,  and some custom stuff.  Plus my keybindings
 
 
+This setup removes the Colour-theme pack that comes with emacs-live and replaces it with theme-pack
+which uses the newer builtin theme management that comes with emacs 24.
+
+In addition to the default themes, cyberpunk, zenburn, and strange-deeper-blue are included.
+Along with a large number of themes that have been converted from the old color-theme format.
+
+
+C-Tags
+===========
+
+Included is the helm+ ctags pack. This pack uses exuberant ctags instead of etags for file tagging. TAGS files
+are automatically generated and set as you traverse your projects. On OS-X with ctags 5.8 there is an issue which causes
+ctags -e to generate invalid tags files. To fix this 'export CFLAGS=-O0' before doing a 'brew install'. From then on
+the find-tags function worked fine.
+
+Also included are some extensions to ido, most notably  'ido-find-tag' and 'ido-find-file-in-tag-files'.
+
+Cyclebufs
+===========
+
+The Cyclebufs pack is a sort of scratch pack. It has cyclebufs, along with other things that haven't made it into other packs yet. I'll likely fix that soon, but for now my key bindings and the ido functions along with a few other things are in that pack. Check ~/.emacs.d/emacs-live-packs/cyclebufs-pack/config/ to see what is there.
+
 install
 ===========
 
