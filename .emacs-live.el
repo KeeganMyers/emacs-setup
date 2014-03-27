@@ -24,4 +24,6 @@
                   "cyclebufs-pack"
                   ;Solarized theme pack.
                   "solarized-pack"
+                  ;theme pack to replace emacs-live colour-theme.
+                  "theme-pack"
                   ))
