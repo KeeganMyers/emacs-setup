@@ -26,4 +26,7 @@
                   "solarized-pack"
                   ;theme pack to replace emacs-live colour-theme.
                   "theme-pack"
+                  ;Personal pack for key bindings, random functions, variable settings.
+                  ; This should always be last.
+                  "personal-pack"
                   ))
