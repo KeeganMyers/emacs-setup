@@ -20,15 +20,20 @@ C-Tags
 
 Included is the helm+ ctags pack. This pack uses exuberant ctags instead of etags for file tagging. TAGS files
 are automatically generated and set as you traverse your projects. On OS-X with ctags 5.8 there is an issue which causes
-ctags -e to generate invalid tags files. To fix this ```export CFLAGS=-O0``` before doing a ```brew install```. From then on
-the find-tags function worked fine.
+ctags -e to generate invalid tags files. To fix this ```export CFLAGS=-O0``` before doing a ```brew install```. From then on the find-tags function worked fine.
 
-Also included are some extensions to ido, most notably  ```ido-find-tag``` and ```ido-find-file-in-tag-files```.
 
-Cyclebufs
+Personal-Pack
 ===========
 
-The Cyclebufs pack is a sort of scratch pack. It has cyclebufs, along with other things that haven't made it into other packs yet. I'll likely fix that soon, but for now my key bindings and the ido functions along with a few other things are in that pack. Check ```~/.emacs.d/emacs-live-packs/cyclebufs-pack/config/``` to see what is there.
+The Personal pack is a sort of scratch pack. It has a place for functions, key bindings, variables and setup.
+Personal pack is always the last pack loaded, so this is a great place to change emacs from the defaults that
+have accumulated from the other packs. I would recommend forking the [personal-pack repository](https://github.com/EricGebhart/personal-pack) so you can one
+of your own. 
+
+There are a few functions in functions.el, Most notably are some extensions to ido, ```ido-find-tag``` and ```ido-find-file-in-tag-files```.  keys.el has all my special keybindings which is mostly _F keys_.
+Vars.el sets some git-gutter variables and Display-buffer-alist, although that does not work so well yet.
+Check ```~/.emacs.d/emacs-live-packs/personal-pack/config/``` to see what is there.
 
 Git Gutter
 ==========
@@ -63,11 +68,18 @@ f2 k  = show keybindings for current major and minor modes.
 
 F3 = cycle shell and REPL buffers in the 'sub' pane
 
+F4 = eproject-ibuffer
+S-F4 = ibuffer
+C-F4 = Dired
+
 F12, S-F12 = contextual cycle of buffers, forward and backwards.
+C-F12, M-f12 = cycle all buffers.
 
 Buffer cycling is contextual, \*---\* buffers only cycle in the lower pane. non * buffers cycle in the main window pane.
 
 F11 moves the focus between panes.
+S-F11 - comment / uncomment line
+C-F11 - comment / uncomment paragraph
 
 F10 opens a file.
 
