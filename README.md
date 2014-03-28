@@ -3,6 +3,10 @@ emacs-setup
 
 My emacs setup.  Emacs live, cider, Evil, eproject, helm+ ctags,  and some custom stuff.  Plus my keybindings
 
+Evil Mode
+=========
+Yes, I'm one of those. I've been using emacs in some sort of Vi emulation since 1995. Evil-mode is the best so far.
+You can easily turn it off in the personal-pack. The Evil mode pack includes a few but not all of the Evil-mode extensions. For more information check out the [Evil-mode documentation.](http://www.emacswiki.org/emacs/Evil)
 
 Emacs 24 themes
 ================
