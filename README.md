@@ -3,6 +3,10 @@ emacs-setup
 
 My emacs setup.  Emacs live, cider, Evil, eproject, helm+ ctags,  and some custom stuff.  Plus my keybindings
 
+Evil Mode
+=========
+Yes, I'm one of those. I've been using emacs in some sort of Vi emulation since 1995. Evil-mode is the best so far.
+You can easily turn it off in the personal-pack. The Evil mode pack includes a few but not all of the Evil-mode extensions. For more information check out the [Evil-mode documentation.](http://www.emacswiki.org/emacs/Evil)
 
 Emacs 24 themes
 ================
@@ -22,6 +26,22 @@ Included is the helm+ ctags pack. This pack uses exuberant ctags instead of etag
 are automatically generated and set as you traverse your projects. On OS-X with ctags 5.8 there is an issue which causes
 ctags -e to generate invalid tags files. To fix this ```export CFLAGS=-O0``` before doing a ```brew install```. From then on the find-tags function worked fine.
 
+eproject
+=========
+There are a couple of eprojects out there. This one is very non-invasive, and does a nice job of figuring out when you are in a project. The [eproject repository is here](https://github.com/jrockway/eproject)
+
+Install Packages
+=================
+This is not really the Emacs-Live way, but Packages are installed. Elpa, Melpa and Marmalade are setup to go.
+ErgoMacs has a nice explanation [here.](http://ergoemacs.org/emacs/emacs_package_system.html)
+
+Clojure
+============
+The Cider page says that it comes with Emacs-Live, but I have not found that. Included is a [Clojure-cider pack](https://github.com/EricGebhart/clojure-cider-pack) that gets it all set up.
+
+Clojure Script
+================
+The [Clojure Script pack](https://github.com/ardumont/clojurescript-pack) sets up clojure-script mode.
 
 Personal-Pack
 ===========
