@@ -15,7 +15,7 @@ Included with this pack are
 * [evil-surround](https://github.com/timcharper/evil-surround)
 * [powerline](https://github.com/Dewdrops/powerline) 
  
-Powerline is is off by default, see setup.el in the personal-pack to turn it on.
+Powerline is is off by default, see __setup.el__ in the __personal-pack__ to turn it on.
 
 
 Emacs 24 themes
@@ -24,10 +24,12 @@ Emacs 24 themes
 This setup removes the Colour-theme pack that comes with emacs-live and replaces it with theme-pack
 which uses the newer builtin theme management that comes with emacs 24.
 
-In addition to the default themes, Solarized themes, cyberpunk, zenburn, and strange-deeper-blue are included.
+In addition to the default themes, Solarized themes, cyberpunk, zenburn, deviant and strange-deeper-blue are included.
 Along with a large number of themes that have been converted from the old color-theme format.
 
 **__Solarized Dark is the default theme.__**
+
+To change the theme, M-x customize-themes.  Or customize __setup.el__ in ```emacs-live-packs/personal-pack```
 
 C-Tags
 ===========
