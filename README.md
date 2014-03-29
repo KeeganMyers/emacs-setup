@@ -8,6 +8,16 @@ Evil Mode
 Yes, I'm one of those. I've been using emacs in some sort of Vi emulation since 1995. Evil-mode is the best so far.
 You can easily turn it off in the personal-pack. The Evil mode pack includes a few but not all of the Evil-mode extensions. For more information check out the [Evil-mode documentation.](http://www.emacswiki.org/emacs/Evil)
 
+Included with this pack are 
+* [evil-leader](https://github.com/cofi/evil-leader)
+* [evil-paredit](https://github.com/roman/evil-paredit)
+* [evil-nerd-commenter](https://github.com/redguardtoo/evil-nerd-commenter)
+* [evil-surround](https://github.com/timcharper/evil-surround)
+* [powerline](https://github.com/Dewdrops/powerline) 
+ 
+Powerline is is off by default, see setup.el in the personal-pack to turn it on.
+
+
 Emacs 24 themes
 ================
 
@@ -80,30 +90,37 @@ Basic keybindings
 
 Vi bindings everywhere. If you don't like vi turn it off.  ```M-x Evil-mode```
 
-F1 = M-x
+* F1 = M-x
 
-f2 = Help
+* Help
+ * f2 = Help for help
+ * f2 b  = show keybindings for current major and minor modes.
 
-f2 k  = show keybindings for current major and minor modes.
+* Shell & Cider
+ * F3 = cycle through shell and REPL buffers.
+ * S-F3 = Cider-jack-in
 
-F3 = cycle shell and REPL buffers in the 'sub' pane
+* Buffers and Files
+ * F4 = eproject-ibuffer
+ * S-F4 = ibuffer
+ * C-F4 = Dired
+ 
+ * F9 kills a buffer.
+ * F10 opens a file.
 
-F4 = eproject-ibuffer
-S-F4 = ibuffer
-C-F4 = Dired
+* Buffer cycling
+ * F12, S-F12 = contextual cycle of buffers, forward and backwards.
+ * C-F12, M-f12 = cycle all buffers.
 
-F12, S-F12 = contextual cycle of buffers, forward and backwards.
-C-F12, M-f12 = cycle all buffers.
+    Buffer cycling is contextual, \*---\* buffers only cycle in the lower pane. non * buffers cycle in the main window pane.
 
-Buffer cycling is contextual, \*---\* buffers only cycle in the lower pane. non * buffers cycle in the main window pane.
+* Moving between panes
+ * F11 moves the focus between panes.
 
-F11 moves the focus between panes.
-S-F11 - comment / uncomment line
-C-F11 - comment / uncomment paragraph
+* Comments
+ * S-F11 - comment / uncomment line
+ * C-F11 - comment / uncomment paragraph
 
-F10 opens a file.
-
-F9 kills a buffer.
 
 Take a look at ~/.emacs.d/emacs-live-packs/cyclebufs-pack/config/keys.el  to see or change the key bindings.
 
