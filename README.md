@@ -77,8 +77,10 @@ Read the doc, and make it do what you want. There are several settings shown in 
 ELPY
 =========
 [Elpy](https://github.com/jorgenschaefer/elpy/wiki) is a Python development package which includes many other packages.
-It can use [Rope](http://rope.sourceforge.net/) or [Jedi](https://github.com/davidhalter/jedi) for introspection.
-Elpy includes [flake8](https://pypi.python.org/pypi/flake8) *pyflakes* and *pep8* for code checking.
+* [Rope](http://rope.sourceforge.net/) 
+* or [Jedi](https://github.com/davidhalter/jedi) for introspection.
+* [flake8](https://pypi.python.org/pypi/flake8) *pyflakes* and *pep8* for code checking.
+* [Nose](https://nose.readthedocs.org/en/latest/) for testing.
 
 Emacs 24's python.el is the prefered python mode, it is the better parts of the old python.el and python-mode.el. Elpy
 can also use ipython. See *vars.el* in the *personal-pack*.
