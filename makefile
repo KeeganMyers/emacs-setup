@@ -17,9 +17,21 @@ install:
 	rm -rf ~/${EMACSDIR}/packs/stable/colour-pack
 	rm -rf ~/${EMACSDIR}/packs/dev/colour-pack
 
-elpy:
+
+elpy-py3k: elpy-base rope_py3k
+
+elpy: elpy-base rope
+
+elpy-base:
+	pip install elpy
+	pip install flake8
+	pip install jedi
+
+ipython:
 	easy_install ipython[all]
-	pip_install elpy
-	pip_install flake8
-	pip_install jedi
-	pip_install rope
+
+rope:
+	pip install rope
+
+rope_py3k:
+	pip install rope_py3k

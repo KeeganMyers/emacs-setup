@@ -77,7 +77,7 @@ Read the doc, and make it do what you want. There are several settings shown in 
 ELPY
 =========
 [Elpy](https://github.com/jorgenschaefer/elpy/wiki) is a Python development package which includes many other packages.
-* [Rope](http://rope.sourceforge.net/) 
+* [Rope](http://rope.sourceforge.net/) - This is the default.
 * or [Jedi](https://github.com/davidhalter/jedi) for introspection.
 * [flake8](https://pypi.python.org/pypi/flake8) *pyflakes* and *pep8* for code checking.
 * [Nose](https://nose.readthedocs.org/en/latest/) for testing.
@@ -85,9 +85,31 @@ ELPY
 Emacs 24's python.el is the prefered python mode, it is the better parts of the old python.el and python-mode.el. Elpy
 can also use ipython. See *vars.el* in the *personal-pack*.
 
-The make file has an __elpy__ rule which will install the Python parts of Elpy, ipython, flake8, jedi, and rope. 
-Although you may want to do that manually. The best place to start
+The make file has a few rules to help with the installation of the python modules that Elpy depends on.
+Only rope has a separate version for Python 3.x.
+
+__Makefile Rules__
+* __elpy__ Installs the Python parts of 
+ * Elpy 
+ * flake8
+ * jedi
+ * rope
+* __elpy-py3k__  Is the same but for python 3.+
+ * Elpy
+ * flake8
+ * Jedi
+ * **rope_py3k** 
+* __ipython__ Installs IPython.
+ 
+Although you may want to do all of this manually. The best place to start
 is the [Elpy install page](https://github.com/jorgenschaefer/elpy/wiki/Installation)
+
+You may need to install [python setup tools](https://pypi.python.org/pypi/setuptools) to get **__easy_install__**.
+This command generally works on OS X and Unix/Linux. 
+If you have errors on OS X check which easy_install and pip executables that you are using and that they
+match your version of python.
+
+```wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | sudo python```
 
 
 install
