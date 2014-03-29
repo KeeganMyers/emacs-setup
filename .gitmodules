@@ -37,3 +37,6 @@
 [submodule "emacs-live-packs/personal-pack"]
 	path = emacs-live-packs/personal-pack
 	url = https://github.com/EricGebhart/personal-pack.git
+[submodule "emacs-live-packs/elpy-pack"]
+	path = emacs-live-packs/elpy-pack
+	url = https://github.com/EricGebhart/elpy-pack.git

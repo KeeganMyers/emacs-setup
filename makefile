@@ -16,3 +16,10 @@ install:
 	cp -R emacs-live-packs ~/${EMACSDIR}/
 	rm -rf ~/${EMACSDIR}/packs/stable/colour-pack
 	rm -rf ~/${EMACSDIR}/packs/dev/colour-pack
+
+elpy:
+	easy-install ipython[all]
+        pip-install elpy
+        pip-install flake8
+        pip-install jedi
+        pip-install rope

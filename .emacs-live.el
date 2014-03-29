@@ -14,6 +14,8 @@
                   "clojurescript-pack"
                   "eproject-pack"
                   "clojure-cider-pack"
+                  ;Python development
+                  "elpy-pack"
                   ;vi emulation.
                   "evilmode-pack"
                   ;automatic tags.

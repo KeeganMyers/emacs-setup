@@ -71,7 +71,21 @@ Git Gutter
 ==========
 
 [Git gutter](https://github.com/syohex/emacs-git-gutter) is part of emacs live. But most styles do not define it's settings.
-Read the doc, and make it do what you want.
+Read the doc, and make it do what you want. There are several settings shown in *vars.el* in the personal-pack.
+
+
+ELPY
+=========
+[Elpy](https://github.com/jorgenschaefer/elpy/wiki) is a Python development package which includes many other packages.
+It can use [Rope](http://rope.sourceforge.net/) or [Jedi](https://github.com/davidhalter/jedi) for introspection.
+Elpy includes [flake8](https://pypi.python.org/pypi/flake8) *pyflakes* and *pep8* for code checking.
+
+Emacs 24's python.el is the prefered python mode, it is the better parts of the old python.el and python-mode.el. Elpy
+can also use ipython. See *vars.el* in the *personal-pack*.
+
+The make file has an __elpy__ rule which will install the Python parts of Elpy, ipython, flake8, jedi, and rope. 
+Although you may want to do that manually. The best place to start
+is the [Elpy install page](https://github.com/jorgenschaefer/elpy/wiki/Installation)
 
 
 install
