@@ -100,9 +100,19 @@ __Makefile Rules__
  * Jedi
  * **rope_py3k** 
 * __ipython__ Installs IPython.
+
+
+To install everything for python 2.?
+
+```make elpy ipython```
+
+To install everything for python 3+
+
+```make elpy-py3k ipython```
  
 Although you may want to do all of this manually. The best place to start
 is the [Elpy install page](https://github.com/jorgenschaefer/elpy/wiki/Installation)
+
 
 You may need to install [python setup tools](https://pypi.python.org/pypi/setuptools) to get **__easy_install__**.
 This command generally works on OS X and Unix/Linux. 
