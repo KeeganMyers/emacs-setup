@@ -18,8 +18,8 @@ install:
 	rm -rf ~/${EMACSDIR}/packs/dev/colour-pack
 
 elpy:
-	easy-install ipython[all]
-        pip-install elpy
-        pip-install flake8
-        pip-install jedi
-        pip-install rope
+	easy_install ipython[all]
+	pip_install elpy
+	pip_install flake8
+	pip_install jedi
+	pip_install rope
