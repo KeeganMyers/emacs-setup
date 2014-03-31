@@ -82,9 +82,18 @@ ELPY
 * [flake8](https://pypi.python.org/pypi/flake8) *pyflakes* and *pep8* for code checking.
 * [Nose](https://nose.readthedocs.org/en/latest/) for testing.
 
+
+These are additional emacs modules in the elpy-pack, which elpy depends upon.
+ * [pyvenv](https://github.com/jorgenschaefer/pyvenv)
+ * [highlight indentation](https://github.com/antonj/Highlight-Indentation-for-Emacs)
+ * [nose](https://github.com/emacsmirror/nose)
+
 Emacs 24's python.el is the prefered python mode, it is the better parts of the old python.el and python-mode.el. Elpy
 can also use ipython. See *vars.el* in the *personal-pack*.
 
+
+The Makefile
+------------
 The make file has a few rules to help with the installation of the python modules that Elpy depends on.
 Only rope has a separate version for Python 3.x.
 
