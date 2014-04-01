@@ -1,7 +1,11 @@
 emacs-setup
 ======================================================================
 
-My emacs setup.  Emacs live, cider, Evil, eproject, helm+ ctags,  and some custom stuff.  Plus my keybindings
+My emacs setup.  Emacs live, cider, Evil, eproject, helm+ ctags,  and some custom stuff.  Plus my keybindings.
+I completely ditched my 15 years worth of old emacs setup and started over. I code in many languages, but
+clojure and python are the most common currently. Emacs-Live seemed like an easy path to take. I've also been
+using vi emulation since the beginning, so Evil mode was the right choice. I also missed CTags. helm+ ctags takes
+care of that seamlessly.
 
 Evil Mode
 =========
@@ -32,7 +36,7 @@ shell, but eshell is really nice. See *vars.el* in the *personal-pack*.
 Emacs 24 themes
 ================
 
-This setup removes the Colour-theme pack that comes with emacs-live and replaces it with theme-pack
+This setup removes the problematic Colour-theme pack that comes with emacs-live and replaces it with theme-pack
 which uses the newer builtin theme management that comes with emacs 24.
 
 In addition to the default themes, Solarized themes, cyberpunk, zenburn, deviant and strange-deeper-blue are included.
@@ -47,7 +51,7 @@ C-Tags
 
 Included is the helm+ ctags pack. This pack uses exuberant ctags instead of etags for file tagging. TAGS files
 are automatically generated and set as you traverse your projects. On OS-X with ctags 5.8 there is an issue which causes
-ctags -e to generate invalid tags files. To fix this ```export CFLAGS=-O0``` before doing a ```brew install```. From then on the find-tags function worked fine.
+```ctags -e``` to generate invalid tags files. To fix this ```export CFLAGS=-O0``` before doing a ```brew install```. From then on the find-tags function worked fine.
 
 eproject
 =========
@@ -57,6 +61,8 @@ Install Packages
 =================
 This is not really the Emacs-Live way, but Packages are installed. Elpa, Melpa and Marmalade are setup to go.
 ErgoMacs has a nice explanation [here.](http://ergoemacs.org/emacs/emacs_package_system.html)
+*setup.el* in the personal pack has a function where you can list the packages you want installed, so it
+will install them for you.
 
 Clojure
 ============
@@ -71,11 +77,10 @@ Personal-Pack
 
 The Personal pack is a sort of scratch pack. It has a place for functions, key bindings, variables and setup.
 Personal pack is always the last pack loaded, so this is a great place to change emacs from the defaults that
-have accumulated from the other packs. I would recommend forking the [personal-pack repository](https://github.com/EricGebhart/personal-pack) so you can one
-of your own. 
+have accumulated from the other packs. I would recommend forking the [personal-pack repository](https://github.com/EricGebhart/personal-pack) so you can have one of your own. 
 
 There are a few functions in functions.el, Most notably are some extensions to ido, ```ido-find-tag``` and ```ido-find-file-in-tag-files```.  keys.el has all my special keybindings which is mostly _F keys_.
-Vars.el sets some git-gutter variables and Display-buffer-alist, although that does not work so well yet.
+Vars.el sets some variables for the various packages and eshell.
 Check ```~/.emacs.d/emacs-live-packs/personal-pack/config/``` to see what is there. I've tried to put sections
 for the various packages which have settings or functions to call on startup. Look in *setup.el* and *vars.el*.
 
