@@ -17,6 +17,17 @@ Included with this pack are
  
 Powerline is is off by default, see __setup.el__ in the __personal-pack__ to turn it on.
 
+CycleBufs
+==============
+This pack is now built on top of BS - Buffer Selection. There are several bs-configurations,
+and extra functionality which makes switching buffers more contextual. Cycling through shell, eshell,
+cider and Inferior-python (ipython or cpython - REPL), as well as finding a window currently displaying
+one of them before cycling. Contextual cycling based on the current buffer, cycling through shells, *buffers,
+or file buffers accordingly. This is still a work in progress but is getting better all the time.
+
+Cyclebufs will open a shell buffer of your choice based on the value of cb-shell-command. The default is
+shell, but eshell is really nice. See *vars.el* in the *personal-pack*.  
+    (setq cb-shell-command 'eshell)
 
 Emacs 24 themes
 ================
@@ -65,7 +76,10 @@ of your own.
 
 There are a few functions in functions.el, Most notably are some extensions to ido, ```ido-find-tag``` and ```ido-find-file-in-tag-files```.  keys.el has all my special keybindings which is mostly _F keys_.
 Vars.el sets some git-gutter variables and Display-buffer-alist, although that does not work so well yet.
-Check ```~/.emacs.d/emacs-live-packs/personal-pack/config/``` to see what is there.
+Check ```~/.emacs.d/emacs-live-packs/personal-pack/config/``` to see what is there. I've tried to put sections
+for the various packages which have settings or functions to call on startup. Look in *setup.el* and *vars.el*.
+
+__Eshell__ There are also settings for eshell, along with several prompts to choose from in eshell-setup.el.
 
 Git Gutter
 ==========
@@ -76,10 +90,13 @@ Read the doc, and make it do what you want. There are several settings shown in 
 
 ELPY
 =========
+This is the current king of python development on emacs. There have been others, but this one is currently under
+development and is as up to date as it gets. It is using an older version of flymake, but I don't see that as an issue.
 [Elpy](https://github.com/jorgenschaefer/elpy/wiki) is a Python development package which includes many other packages.
 * [Rope](http://rope.sourceforge.net/) - This is the default.
 * or [Jedi](https://github.com/davidhalter/jedi) for introspection.
 * [flake8](https://pypi.python.org/pypi/flake8) *pyflakes* and *pep8* for code checking.
+ * [flake8 configuration documentation](http://flake8.readthedocs.org/en/latest/config.html#global) 
 * [Nose](https://nose.readthedocs.org/en/latest/) for testing.
 
 
@@ -95,7 +112,9 @@ can also use ipython. See *vars.el* in the *personal-pack*.
 The Makefile
 ------------
 The make file has a few rules to help with the installation of the python modules that Elpy depends on.
-Only rope has a separate version for Python 3.x.
+Only rope has a separate version for Python 3.x. It's important to instal readline with easy_install.
+If you get a crash on start up with ```M-x elpy-shell-switch-to-shell``` readline is quite possibly the problem.
+Also, keep an eye on the install paths on OS X. Things don't always go where PATH can find them.
 
 __Makefile Rules__
 * __elpy__ Installs the Python parts of 
@@ -103,10 +122,12 @@ __Makefile Rules__
  * flake8
  * jedi
  * rope
+ * readline
 * __elpy-py3k__  Is the same but for python 3.+
  * Elpy
  * flake8
  * Jedi
+ * readline
  * **rope_py3k** 
 * __ipython__ Installs IPython.
 
