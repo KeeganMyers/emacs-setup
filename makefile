@@ -26,7 +26,7 @@ elpy-base:
 	pip install elpy
 	pip install flake8
 	pip install jedi
-        easy_install readline
+	easy_install readline
 
 ipython:
 	easy_install ipython[all]
