@@ -1,7 +1,8 @@
 emacs-setup
 ======================================================================
 
-My emacs setup.  Emacs live, cider, Evil, eproject, helm+ ctags,  and some custom stuff.  Plus my keybindings.
+My emacs setup.  Emacs live, cider, Evil, eproject, helm+ ctags, the Elpy python environment and some custom stuff.
+Plus my keybindings. 
 I completely ditched my 15 years worth of old emacs setup and started over. I code in many languages, but
 clojure and python are the most common currently. Emacs-Live seemed like an easy path to take. I've also been
 using vi emulation since the beginning, so Evil mode was the right choice. I also missed CTags. helm+ ctags takes
@@ -23,15 +24,19 @@ Powerline is is off by default, see __setup.el__ in the __personal-pack__ to tur
 
 CycleBufs
 ==============
-This pack is now built on top of BS - Buffer Selection. There are several bs-configurations,
-and extra functionality which makes switching buffers more contextual. Cycling through shell, eshell,
-cider and Inferior-python (ipython or cpython - REPL), as well as finding a window currently displaying
-one of them before cycling. Contextual cycling based on the current buffer, cycling through shells, *buffers,
-or file buffers accordingly. This is still a work in progress but is getting better all the time.
+[This pack](http://github.com/EricGebhart/cyclebufs-pack) is now built on top of BS - Buffer Selection. There are several bs-configurations,
+and extra functionality which makes switching buffers more contextual. 
+Reusing windows for different mode groups shell, dired, and bs-show if they are visible.
+
+Also cycling of buffers based on groups.
+
+As an example, the shell group contains shell, eshell, ansi-term, cider, and inferior python modes.
+one of them before cycling. There is also contextual cycling based on the mode group of the current buffer, 
+cycling through shells, *buffers, or file buffers accordingly. 
+
 
 Cyclebufs will open a shell buffer of your choice based on the value of cb-shell-command. The default is
-shell, but eshell is really nice. See *vars.el* in the *personal-pack*.  
-    (setq cb-shell-command 'eshell)
+eshell. See *vars.el* in the *personal-pack*.  
 
 Emacs 24 themes
 ================
@@ -85,6 +90,7 @@ Check ```~/.emacs.d/emacs-live-packs/personal-pack/config/``` to see what is the
 for the various packages which have settings or functions to call on startup. Look in *setup.el* and *vars.el*.
 
 __Eshell__ There are also settings for eshell, along with several prompts to choose from in eshell-setup.el.
+__Evil-mode__ see evil-setup.el.
 
 Git Gutter
 ==========
