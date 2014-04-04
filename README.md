@@ -186,24 +186,30 @@ Vi bindings everywhere. If you don't like vi turn it off.  ```M-x Evil-mode```
 * Help
  * f2 = Help for help
  * f2 b  = show keybindings for current major and minor modes.
+ * f2 a  = apropos
+ * f2 f  = find function
+ * f2 v  = find variable
+ * f2 k  = show function bound to key(s).
+ * f2 m  = show major minor modes for current buffer.
 
 * Shell & Cider
- * F3 = cycle through shell and REPL buffers.
- * S-F3 = Cider-jack-in
+ * F3 =  cb-next-shell-window, New shell if needed, focus window, cycle through shell and REPL buffers.
+ * S-F3 = cb-next-cider-window, - cider-jack-in, focus window, cycle through shell and REPL buffers.
+ * C-F3 = Cider-quit
+ * M-F3 = Cider
 
 * Buffers and Files
- * F4 = eproject-ibuffer
- * S-F4 = ibuffer
- * C-F4 = Dired
+ * F4 = cb-next-dired-window, focus window, get dired, cycle through dired buffers.
+ * S-F4 = dired
+ * C-F4 = cb-next-show-window
+ * M-F4 = eproject-ibuffer
  
  * F9 kills a buffer.
  * F10 opens a file.
 
 * Buffer cycling
- * F12, S-F12 = contextual cycle of buffers, forward and backwards.
- * C-F12, M-f12 = cycle all buffers.
-
-    Buffer cycling is contextual, \*---\* buffers only cycle in the lower pane. non * buffers cycle in the main window pane.
+ * F12, S-F12 = contextual next/previous buffers, forward and backwards.
+ * C-F12, M-f12 = next/previous all buffers.
 
 * Moving between panes
  * F11 moves the focus between panes.
@@ -213,7 +219,7 @@ Vi bindings everywhere. If you don't like vi turn it off.  ```M-x Evil-mode```
  * C-F11 - comment / uncomment paragraph
 
 
-Take a look at ~/.emacs.d/emacs-live-packs/cyclebufs-pack/config/keys.el  to see or change the key bindings.
+Take a look at _~/.emacs.d/emacs-live-packs/cyclebufs-pack/config/keys.el_ to see or change the key bindings.
 
 Instead of nrepl cider is installed.  If you see instructions to use M-x nrepl-????  try M-x cider-???? instead.
 Cider is the new and improved replacement to nrepl.
