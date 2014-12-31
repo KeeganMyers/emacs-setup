@@ -37,3 +37,9 @@
 [submodule "emacs-live-packs/elpy-pack"]
 	path = emacs-live-packs/elpy-pack
 	url = https://github.com/EricGebhart/elpy-pack.git
+[submodule "emacs-live-packs/Aggressive-indent-pack"]
+	path = emacs-live-packs/Aggressive-indent-pack
+	url = https://github.com/EricGebhart/Aggressive-indent-pack.git
+[submodule "emacs-live-packs/use-package-pack"]
+	path = emacs-live-packs/use-package-pack
+	url = https://github.com/EricGebhart/use-package-pack.git
