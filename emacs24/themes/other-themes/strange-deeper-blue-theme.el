@@ -95,6 +95,18 @@
  '(show-paren-mismatch ((((class color) (min-colors 89)) (:background "red1" :foreground "white"))))
  '(success ((((class color) (min-colors 89)) (:foreground "SeaGreen2"))))
  '(warning ((((class color) (min-colors 89)) (:foreground "Yellow"))))
+ ;; term - stolen from zenburn.
+ '(term-color-black ((t (:foreground "grey70" :background "#002b36"))))
+ '(term-color-red ((t (:foreground "#a34806" :background "#88090b"))))
+ '(term-color-green ((t (:foreground "seagreen2" :background "#70a870"))))
+ '(term-color-yellow ((t (:foreground "goldenrod" :background "moccasin"))))
+ '(term-color-blue ((t (:foreground "#7388d6" :background "#3071f3"))))
+ '(term-color-magenta ((t (:foreground "#ee6699" :background "#bb2820"))))
+ '(term-color-cyan ((t (:foreground "SkyBlue1" :background "aquamarine"))))
+ '(term-color-white ((t (:foreground "grey70" :background "seagreen"))))
+ '(term-default-fg-color ((t (:inherit term-color-white))))
+ '(term-default-bg-color ((t (:inherit term-color-black))))
+
  ;; rainbow-delimiters
  '(rainbow-delimiters-depth-1-face (((( class color) (min-colors 89)) (:foreground "#707183"))))
  '(rainbow-delimiters-depth-2-face (((( class color) (min-colors 89)) (:foreground "#7388d6"))))
