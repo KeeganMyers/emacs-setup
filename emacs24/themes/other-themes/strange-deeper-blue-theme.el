@@ -90,12 +90,12 @@
  '(outline-4 ((((class color) (min-colors 89)) (:foreground "turquoise2"))))
  '(outline-5 ((((class color) (min-colors 89)) (:foreground "aquamarine1"))))
  '(primary-selection ((((class color) (min-colors 89)) (:background "blue3"))))
- '(region ((((class color) (min-colors 89)) (:background "#102030"))))
+ '(region ((((class color) (min-colors 89)) (:background "#403070" :foreground "grey80"))))
  '(show-paren-match ((((class color) (min-colors 89)) (:background "dodgerblue1" :foreground "white"))))
  '(show-paren-mismatch ((((class color) (min-colors 89)) (:background "red1" :foreground "white"))))
  '(success ((((class color) (min-colors 89)) (:foreground "SeaGreen2"))))
  '(warning ((((class color) (min-colors 89)) (:foreground "Yellow"))))
-      ;; rainbow-delimiters
+ ;; rainbow-delimiters
  '(rainbow-delimiters-depth-1-face (((( class color) (min-colors 89)) (:foreground "#707183"))))
  '(rainbow-delimiters-depth-2-face (((( class color) (min-colors 89)) (:foreground "#7388d6"))))
  '(rainbow-delimiters-depth-3-face (((( class color) (min-colors 89)) (:foreground "#909183"))))
@@ -123,30 +123,29 @@
  '(rainbow-delimiters-depth-11-face (((( class color) (min-colors 89)) (:foreground "#a34806"))))
  '(rainbow-delimiters-depth-12-face (((( class color) (min-colors 89)) (:foreground "#a0a173"))))
  '(rainbow-delimiters-unmatched-face (((( class color) (min-colors 90)) (:foreground  "#88090b"))))
-
-; '(rainbow-delimiters-depth-1-face (((( class color) (min-colors 89)) (:foreground "#8071d3"))))
-; '(rainbow-delimiters-depth-2-face (((( class color) (min-colors 89)) (:foreground "#53e8f6"))))
-; '(rainbow-delimiters-depth-3-face (((( class color) (min-colors 89)) (:foreground "#c08133"))))
-; '(rainbow-delimiters-depth-4-face (((( class color) (min-colors 89)) (:foreground "#bb2820"))))
-;; '(rainbow-delimiters-depth-5-face (((( class color) (min-colors 89)) (:foreground "#9348f6"))))
-; '(rainbow-delimiters-depth-6-face (((( class color) (min-colors 89)) (:foreground "#30d093"))))
-; '(rainbow-delimiters-depth-7-face (((( class color) (min-colors 89)) (:foreground "#a09850"))))
-; '(rainbow-delimiters-depth-8-face (((( class color) (min-colors 89)) (:foreground "#cc560a"))))
-; '(rainbow-delimiters-depth-9-face (((( class color) (min-colors 89)) (:foreground "#2ca61d"))))
-; '(rainbow-delimiters-depth-10-face (((( class color) (min-colors 89)) (:foreground "#3071f3"))))
-; '(rainbow-delimiters-depth-11-face (((( class color) (min-colors 89)) (:foreground "#a34806"))))
-; '(rainbow-delimiters-depth-12-face (((( class color) (min-colors 89)) (:foreground "#a0a173"))))
-; '(rainbow-delimiters-unmatched-face (((( class color) (min-colors 90)) (:foreground  "#88090b"))))
+                                        ; '(rainbow-delimiters-depth-1-face (((( class color) (min-colors 89)) (:foreground "#8071d3"))))
+                                        ; '(rainbow-delimiters-depth-2-face (((( class color) (min-colors 89)) (:foreground "#53e8f6"))))
+                                        ; '(rainbow-delimiters-depth-3-face (((( class color) (min-colors 89)) (:foreground "#c08133"))))
+                                        ; '(rainbow-delimiters-depth-4-face (((( class color) (min-colors 89)) (:foreground "#bb2820"))))
+ ;; '(rainbow-delimiters-depth-5-face (((( class color) (min-colors 89)) (:foreground "#9348f6"))))
+                                        ; '(rainbow-delimiters-depth-6-face (((( class color) (min-colors 89)) (:foreground "#30d093"))))
+                                        ; '(rainbow-delimiters-depth-7-face (((( class color) (min-colors 89)) (:foreground "#a09850"))))
+                                        ; '(rainbow-delimiters-depth-8-face (((( class color) (min-colors 89)) (:foreground "#cc560a"))))
+                                        ; '(rainbow-delimiters-depth-9-face (((( class color) (min-colors 89)) (:foreground "#2ca61d"))))
+                                        ; '(rainbow-delimiters-depth-10-face (((( class color) (min-colors 89)) (:foreground "#3071f3"))))
+                                        ; '(rainbow-delimiters-depth-11-face (((( class color) (min-colors 89)) (:foreground "#a34806"))))
+                                        ; '(rainbow-delimiters-depth-12-face (((( class color) (min-colors 89)) (:foreground "#a0a173"))))
+                                        ; '(rainbow-delimiters-unmatched-face (((( class color) (min-colors 90)) (:foreground  "#88090b"))))
 
  '(git-gutter:added ((((class color) (min-colors 89)) (:background "#080a16" :foreground "seagreen2"
-                                              :weight bold))))
+                                                                   :weight bold))))
  '(git-gutter:deleted ((((class color) (min-colors 89)) (:background "#080a16" :foreground "indianred4"
-                                                :weight bold))))
+                                                                     :weight bold))))
  '(git-gutter:modified ((((class color) (min-colors 89)) (:background "#080a16" :foreground "Skyblue1"
-                                                 :weight bold))))
+                                                                      :weight bold))))
  '(git-gutter:unchanged ((((class color) (min-colors 89)) (:background "#080a16"
-                                                  :foreground "#102030"
-                                                  :weight bold))))
+                                                                       :foreground "#102030"
+                                                                       :weight bold))))
 
  )
 

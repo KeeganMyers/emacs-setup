@@ -30,6 +30,11 @@
                                                (match-end 1) "Ƥ")
                                nil))))))
 
+;; (eval-after-load 'clojur-mode
+;;   '(font-lock-add-keywords
+;;     'clojure-mode `(("(\\(sw?\\)[[:space:]]")
+;;                     0 font-lock-builtin-face)))
+
 (require 'clojure-mode)
 
 ;; extra font locking is imprecise, but nice.

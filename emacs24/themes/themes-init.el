@@ -1,6 +1,7 @@
 (require 'bytecompiledir)
-(byte-compile-directory "~/emacs24/themes/palette-themes")
-(byte-compile-directory "~/emacs24/themes/other-themes")
+;;(byte-compile-directory "~/emacs24/themes/palette-themes")
+;;(byte-compile-directory "~/emacs24/themes/other-themes")
+
 
 (add-to-list 'custom-theme-load-path "~/emacs24/themes/other-themes")
 (add-to-list 'custom-theme-load-path "~/emacs24/themes/deviant")
@@ -9,5 +10,5 @@
 
 (setq custom-safe-themes t)
 
-(enable-theme 'strange-deeper-blue)
 (load-theme 'strange-deeper-blue t)
+(enable-theme 'strange-deeper-blue)

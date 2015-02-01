@@ -1,8 +1,6 @@
 ;; evil-leader configuration
 ;; set the leader key to comma
-(setq evil-leader/set-leader "," 
-      evil-leader/in-all-states t)
-
+(setq evil-leader/in-all-states t)
 (require 'evil-leader)
 
 (global-evil-leader-mode)
@@ -11,8 +9,10 @@
   (save-buffer)
   (cider-load-buffer))
 
+(evil-leader/set-leader ",")
+
 (evil-leader/set-key
-  "w" 'save-buffer 
+  "w" 'save-buffer
   "a" 'projectile-ag
   "g" 'magit-status
   "j" 'dired-jump
@@ -20,7 +20,7 @@
   "F" 'fiplr-find-file
   "b" 'projectile-switch-to-buffer
   "B" 'ibuffer
-  "x" 'execute-extended-command
+  "x" 'smex
   "d" 'kill-this-buffer
   "q" 'cb-kill
   "s" 'cb-next-shell-window
