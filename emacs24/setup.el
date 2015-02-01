@@ -44,3 +44,4 @@
 (multi-term)
 (setq term-default-fg-color (face-foreground 'default))
 (setq term-default-bg-color (face-background 'default))
+(setq cb-shell-command 'multi-term)

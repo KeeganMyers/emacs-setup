@@ -38,12 +38,12 @@
 (setq cb-buffer-groups "")
 
 (add-to-list 'cb-buffer-groups '("shells"
-                                shell-mode
-                                eshell-mode
-                                term-mode
-                                cider-repl-mode
-                                inferior-python-mode
-                                inferior-ruby-mode))
+                                 shell-mode
+                                 eshell-mode
+                                 term-mode
+                                 cider-repl-mode
+                                 inferior-python-mode
+                                 inferior-ruby-mode))
 
 (add-to-list 'cb-buffer-groups '("shell-only"
                                  shell-mode
@@ -84,12 +84,14 @@
                                     "^\\*info.*"))
 
 (setq shell-buffer-regexps '("\\*eshell.*"
-                               "\\*shell.*"
-                               "\\*Python.*"
-                               "\\*cider.*"
-                               "\\*ansi-term.*"))
+                             "\\*shell.*"
+                             "\\*Python.*"
+                             "\\*cider.*"
+                             "\\*terminal.*"
+                             "\\*ansi-term.*"))
 
 (setq shell-only-buffer-regexps '("\*shell.*"
+                                  "\*terminal.*"
                                   "\*ansi-term.*"
                                   "\*eshell.*"))
 
