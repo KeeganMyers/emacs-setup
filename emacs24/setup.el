@@ -37,8 +37,10 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Start up a shell.  Pick your poison.
-;;(ansi-term) 
+;;(ansi-term)
 ;;(term)
 ;;(shell)
 ;;(eshell)
 (multi-term)
+(setq term-default-fg-color (face-foreground 'default))
+(setq term-default-bg-color (face-background 'default))

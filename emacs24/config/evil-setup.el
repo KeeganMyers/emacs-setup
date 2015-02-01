@@ -65,8 +65,7 @@
 (evil-add-hjkl-bindings occur-mode 'emacs)
 
 ;; Evil Keys
-(define-key evil-insert-state-map "k" #'cofi/maybe-exit)
-
+;;(define-key evil-insert-state-map "k" #'cofi/maybe-exit)
 ;; (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-up)
 ;; (define-key evil-normal-state-map ",w" 'save-buffer) ; save
 ;; (define-key evil-normal-state-map ",a" 'ack-and-a-half)
