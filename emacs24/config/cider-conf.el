@@ -23,6 +23,8 @@
 (add-to-list 'same-window-buffer-names "*cider*")
 (setq cider-repl-use-clojure-font-lock t)
 (setq cider-auto-select-error-buffer nil)
+(setq cider-repl-use-pretty-printing t)
+
 
 (defadvice cider-load-current-buffer (after switch-namespace activate compile)
   "switch to namespace"

@@ -27,8 +27,8 @@
   "n" 'cb-next-buffer-contextual
   "N" 'cb-next-all-buffer
   "c" 'save-and-load
-  "t" 'ido-find-tag
-  "T" 'find-next-tag
+  "t" 'find-tag-without-ns
+  "T" 'find-next-tag-without-ns
   "e" 'next-error
   "E" 'next-error
-  )
+  "v" 'cider-jump-to-var)

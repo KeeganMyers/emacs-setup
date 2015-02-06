@@ -36,6 +36,8 @@
 ;;;     (global-set-key '[M-kp-8]  'pager-row-up)
 ;(global-set-key '[(meta down)]  'pager-row-down)
 ;;;     (global-set-key '[M-kp-2]  'pager-row-down)
+(global-set-key (kbd "C-*") 'evil-search-word-forward)
+(global-set-key (kbd "C-#") 'evil-search-word-backward)
 
 
 (global-set-key (kbd "<f1>")        'smex)
@@ -50,7 +52,7 @@
 (global-set-key  (kbd "<f3>")       'cb-next-shell-window)
 (global-set-key  (kbd "S-<f3>")     'cb-next-cider-window)
 (global-set-key  (kbd "C-<f3>")     'cider-quit)
-(global-set-key  (kbd "M-<f3>")     'cider)
+(global-set-key  (kbd "M-<f3>")     'cider-connect)
 
 (global-set-key  (kbd "<f4>")       'cb-next-dired-window)
 (global-set-key  (kbd "S-<f4>")     'dired)
@@ -64,9 +66,9 @@
 (global-set-key  (kbd "M-<f5>")     'ctags-update)
 (global-set-key  (kbd "s-<f5>")     'magit-status)
 
-(global-set-key  (kbd "<f6>")       'ido-find-tag)
-(global-set-key  (kbd "S-<f6>")     'find-next-tag)
-(global-set-key  (kbd "C-<f6>")     'ido-find-file-in-tag-files)
+(global-set-key  (kbd "<f6>")       'find-tag-without-ns)
+(global-set-key  (kbd "S-<f6>")     'find-next-tag-without-ns)
+(global-set-key  (kbd "C-<f6>")     'ido-find-tag)
 (global-set-key  (kbd "M-<f6>")     'cider-jump-to-var)
 (global-set-key  (kbd "s-<f6>")     'projectile-ag)
 
@@ -83,7 +85,7 @@
 (global-set-key  (kbd "C-<f9>")     'cb-kill-delete-frame)
 
 (global-set-key  (kbd "<f10>")      'find-file)
-(global-set-key  (kbd "S-<f10>")    'find-file-at-point)
+(global-set-key  (kbd "S-<f10>")    'projectile-switch-to-buffer)
 (global-set-key  (kbd "C-<f10>")    'find-file-at-point-other-window)
 (global-set-key  (kbd "M-<f10>")    'find-file-at-point-new-frame)
 
