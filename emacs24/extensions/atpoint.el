@@ -2,12 +2,12 @@
 
 (defun find-tag-without-ns (next-p)
   (interactive "P")
-  (find-tag (first (last (split-string (symbol-name (symbol-at-point)) "/")))
+  (find-tag (car (last (split-string (symbol-name (symbol-at-point)) "/")))
             next-p))
 
 (defun find-next-tag-without-ns ()
   (interactive)
-  (find-tag (first (last (split-string (symbol-name (symbol-at-point)) "/")))
+  (find-tag (car (last (split-string (symbol-name (symbol-at-point)) "/")))
             t))
 
 (defun isearch-yank-symbol ()
