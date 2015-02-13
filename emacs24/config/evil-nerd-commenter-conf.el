@@ -8,6 +8,8 @@
 ;; (global-set-key (kbd "C-c c") 'evilnc-copy-and-comment-lines)
 ;; (global-set-key (kbd "C-c p") 'evilnc-comment-or-uncomment-paragraphs)
 
+;; I wish this would work.
+
 ;; (require 'evil-leader)
 ;; (global-evil-leader-mode)
 ;; (evil-leader/set-key

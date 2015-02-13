@@ -40,6 +40,12 @@
 (global-set-key (kbd "C-#") 'evil-search-word-backward)
 
 
+(global-set-key (kbd "C-c g")        'magit-status)
+(global-set-key (kbd "C-c c")        'evilnc-copy-and-comment-lines)
+(global-set-key (kbd "C-c l")        'evilnc-comment-or-uncomment-lines)
+(global-set-key (kbd "C-c b")        'evilnc-comment-or-uncomment-paragraphs)
+(global-set-key (kbd "C-c r")        'evilnc--comment-or-uncomment-region)
+
 (global-set-key (kbd "<f1>")        'smex)
 (global-set-key (kbd "C-<f1>")      'redraw-display)
 (global-set-key (kbd "M-<f1>")      'vkill)
