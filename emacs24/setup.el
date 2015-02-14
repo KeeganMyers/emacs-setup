@@ -13,6 +13,7 @@
 ;; Split some windows.
 (balance-windows)
 (split-window-horizontally)
+(split-window-horizontally)
 (split-window-below)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;

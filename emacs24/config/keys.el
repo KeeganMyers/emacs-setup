@@ -45,6 +45,8 @@
 (global-set-key (kbd "C-c l")        'evilnc-comment-or-uncomment-lines)
 (global-set-key (kbd "C-c b")        'evilnc-comment-or-uncomment-paragraphs)
 (global-set-key (kbd "C-c r")        'evilnc--comment-or-uncomment-region)
+(global-set-key (kbd "C-c s")        'cb-next-shell-window)
+(global-set-key (kbd "C-c S")        'cb-next-cider-window)
 
 (global-set-key (kbd "<f1>")        'smex)
 (global-set-key (kbd "C-<f1>")      'redraw-display)
