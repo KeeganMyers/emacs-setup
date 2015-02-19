@@ -71,7 +71,7 @@
 (global-set-key  (kbd "<f5>")       'next-error)
 (global-set-key  (kbd "S-<f5>")     'previous-error)
 (global-set-key  (kbd "<C-f5>")     'toggle-current-window-dedication)
-(global-set-key  (kbd "M-<f5>")     'ctags-update)
+(global-set-key  (kbd "M-<f5>")     'projectile-regenerate-tags)
 (global-set-key  (kbd "s-<f5>")     'magit-status)
 
 (global-set-key  (kbd "<f6>")       'find-tag-without-ns)

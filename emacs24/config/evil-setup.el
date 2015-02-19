@@ -51,6 +51,35 @@
   (evil-define-key 'normal bs-mode-map "l" 'evil-forward-char)
   (evil-define-key 'normal bs-mode-map "RET" 'bs-select))
 
+;; Change :q and :wq save and kill buffer instead of closing
+;; the window.  Do the same for ZZ.
+
+;; In Vim, q and zz kill the tab and the buffer.
+;; emacs doesn't have tabs. does it make sense to kill the window?
+;; I almost never want to get rid of a window I have.
+
+(defun my-evil-save-and-close ()
+  (interactive)
+  (save-buffer)
+  (kill-this-buffer))
+
+;; map space and backspace do go down and up 10 lines at a time.
+(defun evil-big-down()
+  (interactive)
+  (evil-next-line 10)
+  (evil-scroll-line-to-center nil))
+
+(defun evil-big-up()
+  (interactive)
+  (evil-previous-line 10)
+  (evil-scroll-line-to-center nil))
+
+(evil-ex-define-cmd "q[uit]" 'kill-this-buffer)
+(evil-ex-define-cmd "wq" 'my-evil-save-and-close)
+(define-key evil-normal-state-map "ZZ" 'my-evil-save-and-close)
+
+(define-key evil-normal-state-map (kbd  "SPC") 'evil-big-down)
+(define-key evil-normal-state-map (kbd "DEL") 'evil-big-up)
 
 ;; Make HJKL keys work in special buffers
 (evil-add-hjkl-bindings magit-branch-manager-mode-map 'emacs
@@ -65,7 +94,6 @@
 (evil-add-hjkl-bindings occur-mode 'emacs)
 
 ;; Evil Keys
-;;(define-key evil-insert-state-map "k" #'cofi/maybe-exit)
 ;; (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-up)
 ;; (define-key evil-normal-state-map ",w" 'save-buffer) ; save
 ;; (define-key evil-normal-state-map ",a" 'ack-and-a-half)
