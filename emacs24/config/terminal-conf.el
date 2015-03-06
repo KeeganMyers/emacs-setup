@@ -20,6 +20,9 @@
           (lambda ()
             (setq term-buffer-maximum-size 10000)))
 
+;; get copy and paste to work in terminal.
+(add-hook 'term-mode-hook (lambda ()
+                            (define-key term-raw-map (kbd "s-v") 'term-paste)))
 
 ;; most good themes will set these. This example is stolen from Zenburn.
 ;; ;; term
