@@ -31,6 +31,8 @@
 ;;   (define-key evil-normal-state-map ",cv" 'evilnc-toggle-invert-comment-line-by-line))
 
 (evil-leader/set-key
+  "d" 'cider-grimoire-eww
+
   "w" 'save-buffer
   "t" 'find-next-tag-without-ns
   "a" 'projectile-ag
