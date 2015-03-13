@@ -19,7 +19,7 @@
 ;; font settng functions
 (require 'cl)
 
-(set-default-font "-*-Source Code Pro-normal-normal-normal-*-13-*-*-*-m-0-iso10646-1")
+(set-frame-font "-*-Source Code Pro-normal-normal-normal-*-13-*-*-*-m-0-iso10646-1")
 
 ;; make fringe smaller
 (if (fboundp 'fringe-mode)
