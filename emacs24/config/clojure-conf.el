@@ -1,4 +1,5 @@
 ;; anonymous function longhand.
+
 (eval-after-load 'clojure-mode
   '(font-lock-add-keywords
     'clojure-mode `(("(\\(fn\\)[\[[:space:]]"
@@ -30,7 +31,26 @@
                                                (match-end 1) "Ƥ")
                                nil))))))
 
-;; (eval-after-load 'clojur-mode
+
+;; this is the new way to do this.... if only it worked.
+(global-prettify-symbols-mode +1)
+
+;; these do work but why bother.
+(add-hook 'clojure-mode-hook
+          (lambda ()
+            (push '("<=" . ?≤) prettify-symbols-alist)
+            (push '(">=" . ?≥) prettify-symbols-alist)))
+
+;; ;; this almost works. The above works better.
+;; (add-hook 'clojure-mode-hook
+;;           (lambda ()
+;;             (push '("\\(fn\\[\[[:space:]]" . ?λ)  prettify-symbols-alist)
+;;             (push '("\(partial" .  ?Ƥ) prettify-symbols-alist)
+;;             (push '("\#{" .  ?∈) prettify-symbols-alist)
+;;             (push '("\#(" . ?ƒ)  prettify-symbols-alist)))
+
+
+;; (eval-after-load 'clojure-mode
 ;;   '(font-lock-add-keywords
 ;;     'clojure-mode `(("(\\(sw?\\)[[:space:]]")
 ;;                     0 font-lock-builtin-face)))
