@@ -13,6 +13,8 @@
 ;; (setcdr evil-insert-state-map nil)
 
 ;; Set the initial evil state that certain major modes will be in.
+(evil-set-initial-state 'cider-stacktrace-mode 'emacs)
+(evil-set-initial-state 'cider-browse-ns-mode 'emacs)
 (evil-set-initial-state 'cider-docview-mode 'emacs)
 (evil-set-initial-state 'magit-log-edit-mode 'emacs)
 (evil-set-initial-state 'nav-mode 'emacs)
