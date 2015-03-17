@@ -43,6 +43,7 @@
     (define-key cider-sub-map (kbd "r") #'cider-refresh)
     (define-key cider-sub-map (kbd "R") #'cider-restart)
     (define-key cider-sub-map (kbd "c") #'cider-connect)
+    (define-key cider-sub-map (kbd "j") #'cider-jack-in)
     (define-key cider-sub-map (kbd "q") #'cider-quit)
     (define-key cider-sub-map (kbd "v") #'cider-jump-to-var)
     (define-key cider-sub-map (kbd "t") #'cider-toggle-trace-var)
