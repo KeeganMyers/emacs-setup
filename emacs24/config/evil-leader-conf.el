@@ -31,8 +31,10 @@
 ;;   (define-key evil-normal-state-map ",cv" 'evilnc-toggle-invert-comment-line-by-line))
 
 (evil-leader/set-key
-  "D" 'cider-doc
-  "d" 'cider-grimoire-eww
+  "d" 'cider-doc
+  "G" 'cider-grimoire-eww
+  "c" 'cider-apropos
+  "D" 'cider-apropos-documentation
 
   "w" 'save-buffer
   "t" 'find-next-tag-without-ns
@@ -63,7 +65,8 @@
   "E" 'next-error
 
   "r" 'cb-next-cider-window ;; cider connect or focus on cider window.
-  "R" 'cider-connect
+  "R" 'cider-restart
+  "C" 'cider-connect
   "Q" 'cider-quit
   "V" 'undo-tree-visualize
   "v" 'cider-jump-to-var
