@@ -3,7 +3,6 @@
 (require 'cider-grimoire)
 
 (add-hook 'cider-mode-hook 'ac-flyspell-workaround)
-
 ;;; is for using autocomplete, not company mode.
 ;;(add-hook 'cider-mode-hook 'ac-cider-setup)
 ;;(add-hook 'cider-repl-mode-hook 'ac-cider-setup)

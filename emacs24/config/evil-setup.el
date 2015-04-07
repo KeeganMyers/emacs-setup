@@ -16,6 +16,7 @@
 (evil-set-initial-state 'cider-stacktrace-mode 'emacs)
 (evil-set-initial-state 'cider-browse-ns-mode 'emacs)
 (evil-set-initial-state 'cider-docview-mode 'emacs)
+(evil-set-initial-state 'git-rebase-mode 'emacs)
 (evil-set-initial-state 'magit-log-edit-mode 'emacs)
 (evil-set-initial-state 'nav-mode 'emacs)
 (evil-set-initial-state 'grep-mode 'emacs)
