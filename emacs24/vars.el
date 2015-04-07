@@ -54,3 +54,4 @@
                (window-height . 20)))
 
 (setq display-buffer-alist nil)
+(setq checkdoc-arguments-in-order-flag nil)
