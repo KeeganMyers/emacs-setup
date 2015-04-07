@@ -83,7 +83,7 @@
   "W" 'save-and-load ;; save buffer and load into cider.
 
   ;;; Finding
-  "t" 'find-next-tag-without-ns  ;; ctags
+  "t" 'find-tag-without-ns  ;; ctags
   "v" 'cider-jump-to-var
   "a" 'projectile-ag
   "s" 'evil-ace-jump-word-mode  ;;  ace jump search

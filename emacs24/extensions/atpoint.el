@@ -1,15 +1,5 @@
 (require 'thingatpt)
 
-(defun find-tag-without-ns (next-p)
-  (interactive "P")
-  (find-tag (car (last (split-string (symbol-name (symbol-at-point)) "/")))
-            next-p))
-
-(defun find-next-tag-without-ns (s)
-  (interactive "P")
-  (find-tag (car (last (split-string (symbol-name (symbol-at-point)) "/")))
-            t))
-
 (defun isearch-yank-symbol ()
   "*Put symbol at current point into search string."
   (interactive)
