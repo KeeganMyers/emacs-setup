@@ -4,6 +4,7 @@
 (require 'evil-leader)
 
 (require 'cider-doc)
+(require 'clj-refactor)
 
 (global-evil-leader-mode)
 
@@ -68,7 +69,19 @@
     (define-key buffer-sub-map (kbd "*") #'cb-next-emacs-buffer)
     buffer-sub-map))
 
+;; tab will also invoke yas expansion.
+(defvar yasnippet-sub-map
+  (let (yasnippet-sub-map)
+    (define-prefix-command 'yasnippet-sub-map)
+    (define-key yasnippet-sub-map (kbd "d") #'yas-describe-tables)
+    (define-key yasnippet-sub-map (kbd "i") #'yas-insert-snippet)
+    (define-key yasnippet-sub-map (kbd "e") #'yas-expand-snippet)
+    yasnippet-sub-map))
+
+;; M-x describe-mode will help a lot here.
+
 (evil-leader/set-key
+  "D" 'describe-mode
   "d" 'cider-doc-map  ;; this is defined by cider but we get ,d ... instead of C-c C-d ...
   ;; a - cider apropos
   ;; A - cider apropos doc
@@ -78,6 +91,11 @@
   ;; j - javadoc
   "r" 'cider-sub-map  ;; c is used by nerd-commenter. r = repl.
   "b" 'buffer-sub-map  ;; manage buffers.
+
+  ;; Refactoring, code snippets etc.
+  ;; clojure refactor key bindings, Also mapped to C-c C-m.
+  "R" 'cljr--all-helpers ;; clj-refactor.
+  "y" 'yasnippet-sub-map
 
   "w" 'save-buffer
   "W" 'save-and-load ;; save buffer and load into cider.

@@ -43,3 +43,9 @@
 [submodule "emacs-live-packs/use-package-pack"]
 	path = emacs-live-packs/use-package-pack
 	url = https://github.com/EricGebhart/use-package-pack.git
+[submodule "emacs-setup/emacs24/snippets"]
+	path = emacs-setup/emacs24/snippets
+	url = https://github.com/AndreaCrotti/yasnippet-snippets.git
+[submodule "emacs24/snippets"]
+	path = emacs24/snippets
+	url = https://github.com/AndreaCrotti/yasnippet-snippets.git
