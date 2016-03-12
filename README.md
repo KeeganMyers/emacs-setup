@@ -27,19 +27,29 @@ if you are on a smaller screen. Lots of themes.
 Check out _emacs24/packages.el_ to see all the
 packages. look at _emacs24/config_ for all the configurations.
 
-There are significant language tools available. There is an entire sub menu
-of language commands in _evil-leader-conf.el_.  Google translate, translate
-sentence-at-point, input method and dictionary swapping, ispell with hunspell,
-ispell with flycheck for on the fly spell checking and langtool for grammar
-checking.
+I have been studying French for the last year, and I don't plan on stopping.
+I can also see that I'll probably want to add another language or two in the 
+future. So I've been working to tap into the language capabilities of
+emacs. I have a nice function to switch between input methods and dictionaries.
+Ispell, flyspell, and hunspell are all working together for spell checking.
+Google translate is there for highlighted text, current word, or sentence at point
+and Language Tool is there to check grammar. Take a look at the language sub-menu
+in _evil-leader-conf.el_ even if you are going to turn off evil-mode. Check out
+_emacs24/extensions/language.el_ and _emacs24/config/lang-config.el_ and 
+_google-translate-conf.el_
 
-_Mu4e_ There is a reasonably basic mu4e configuration with multiple contexts.
+_Mu4e_ I use mu4e for email. I can't imagine a better email client. There is a
+reasonably basic mu4e configuration with multiple contexts. There is a sample mbsyncrc
+file that can be used to configure _isync/mbsync_.  I have a separate _.emacs-mu4e_ 
+startup file for running an mu4e emacs instance in a terminal, it combines _.emacs_
+and _emacs24/setup.el_ into a single startup that is specifically for email in a terminal.
 
 Everything that can be installed as packages is. *The glaring exception is mu4e.*
+I have included my mu4e directory from _brew install_ but it's probably best to
+link/replace it with your own install. 
+
 Look in _packages.el_ if I happen to add a package through _package-install_ 
 I then go add it to _packages.el_ so I won't forget and configuration is repeatable. 
-There are a lot of themes. Some are old style color-themes that have
-been converted, others are more modern themes like solarized, Venburn. etc.
  
 I didn't mess with key mappings except for F keys, and the addition
 of Evil-leader which allows for ,w for write, ,q delete-buffer, etc.
