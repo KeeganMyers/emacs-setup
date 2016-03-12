@@ -148,9 +148,9 @@ Also some syntactic sugar for #() (fn ) #{} and (partial ..).
 
 Autocomplete via company, rather than autocomplete.
 
-flycheck, kibit and eastwood are also set up. You will have to set up the plugins in your _~/.lein/profiles.clj_
+flycheck, kibit and eastwood, clj-refactor are also set up. You will have to set up the plugins in your _~/.lein/profiles.clj_
 There is a basic _lein-profiles-example.clj_ which you can steal from for your _~/.lein/profiles.clj_ file.
-kibit and eastwood are the primary things to look at. There is nothing special otherwise.
+kibit and eastwood, clj-refactor are the primary things to look at. There is nothing special otherwise.
 
 ELPY
 =========
