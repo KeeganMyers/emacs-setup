@@ -141,39 +141,6 @@
 
 
 
-;; sending mail -- replace USERNAME with your gmail username
-;; also, make sure the gnutls command line utils are installed
-;; package 'gnutls-bin' in Debian/Ubuntu
-
-
-
-(defvar my-mu4e-account-alist
-  '(("eric"
-     (user-mail-address  "e.a.gebhart@gmail.com")
-     (user-full-name     "Eric Gebhart")
-     (mu4e-sent-folder   "/eric/inbox")
-     (mu4e-sent-folder   "/eric/sent")
-     (mu4e-drafts-folder "/eric/drafts")
-     (mu4e-trash-folder  "/eric/trash"))
-    ("tango"
-     (user-mail-address  "work@domain.net")
-     (mu4e-sent-folder   "/tangobreath/inbox")
-     (mu4e-sent-folder   "/tangobreath/sent")
-     (mu4e-drafts-folder "/tangobreath/drafts")
-     (mu4e-trash-folder  "/tangobreath/trash"))
-    ("Yeti"
-     (user-mail-address  "eric@yetidata.com")
-     (mu4e-sent-folder   "/ericYeti/inbox")
-     (mu4e-sent-folder   "/ericYeti/sent")
-     (mu4e-drafts-folder "/ericYeti/drafts")
-     (mu4e-trash-folder  "/ericYeti/trash")
-     )))
-
-;; make an address list  for a context
-(setq mu4e-user-mail-address-list
-      (mapcar (lambda (account) (cadr (assq 'user-mail-address account)))
-              my-mu4e-account-alist))
-
 ;;; setup the first account for startup.
 (setq mu4e-sent-folder "/eric/sent"
       mu4e-trash-folder "/eric/trash"
