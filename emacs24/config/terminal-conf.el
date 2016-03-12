@@ -1,4 +1,10 @@
+;;; Package -- Summary
+;;; Commentary:
+;;; Configure ansi-term and term modes.
+
 (require 'multi-term)
+
+;;; Code:
 
 ;;; terminal settings...
 
@@ -7,6 +13,9 @@
 ;;; basically make sure you have emacs eterm-color entry in your terminfo.
 ;;mkdir ~/.terminfo
 ;;tic -o ~/.terminfo /Applications/Emacs.app/Contents/Resources/etc/e/eterm-color.ti
+
+;;; Turn off yas snippet for terminal so auto complete <TAB> will work.
+(add-hook 'term-mode-hook (lambda() (yas-minor-mode -1)))
 
 ;; pick up said terminfo entry.
 (setq system-uses-terminfo nil)
