@@ -21,6 +21,7 @@
 (evil-set-initial-state 'nav-mode 'emacs)
 (evil-set-initial-state 'grep-mode 'emacs)
 (evil-set-initial-state 'ibuffer-mode 'normal)
+(evil-set-initial-state 'mu4e:compose 'normal)
 
 (require 'evil-surround)
 (global-evil-surround-mode 1)
@@ -31,15 +32,15 @@
   (let ((modified (buffer-modified-p)))
     (insert "k")
     (let ((evt (read-event (format "Insert %c to exit insert state" ?j)
-               nil 0.5)))
+                           nil 0.5)))
       (cond
        ((null evt) (message ""))
        ((and (integerp evt) (char-equal evt ?j))
-    (delete-char -1)
-    (set-buffer-modified-p modified)
-    (push 'escape unread-command-events))
+        (delete-char -1)
+        (set-buffer-modified-p modified)
+        (push 'escape unread-command-events))
        (t (setq unread-command-events (append unread-command-events
-                          (list evt))))))))
+                                              (list evt))))))))
 
 ;; Don't wait for any other keys after escape is pressed.
 (setq evil-esc-delay 0)
