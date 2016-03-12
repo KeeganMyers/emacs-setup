@@ -33,3 +33,21 @@
 ;;(setq cb-shell-command 'ansi-term)
 
 (cb-get-shell)
+;;; squiggly-clojure.
+
+(eval-after-load 'flycheck '(flycheck-clojure-setup))
+(add-hook 'after-init-hook #'global-flycheck-mode)
+
+(with-eval-after-load 'flycheck
+  (flycheck-pos-tip-mode))
+
+;; flycheck-pos-tip-error-messages not found.
+;; (eval-after-load 'flycheck
+;; '(setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))
+
+;; instead of flycheck-pos-tip use flycheck-tip.
+;; (require 'flycheck-tip)
+;; (flycheck-tip-use-timer 'verbose)
+
+;; (add-hook 'cider-mode-hook
+;;           (lambda () (setq next-error-function #'flycheck-next-error-function)))
