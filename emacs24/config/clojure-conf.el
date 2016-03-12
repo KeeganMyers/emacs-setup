@@ -31,15 +31,50 @@
                                                (match-end 1) "Ƥ")
                                nil))))))
 
+;; (eval-after-load 'clojure-mode
+;;   '(font-lock-add-keywords
+;;     'clojure-mode `(("(\\(->>\\)[[:space:]]"
+;;                      (0 (progn (compose-region (match-beginning 1)
+;;                                                (match-end 1) "→→")
+;;                                nil))))))
 
-;; this is the new way to do this.... if only it worked.
+;; (eval-after-load 'clojure-mode
+;;   '(font-lock-add-keywords
+;;     'clojure-mode `(("(\\(->\\)[[:space:]]"
+;;                      (0 (progn (compose-region (match-beginning 1)
+;;                                                (match-end 1) "→")
+;;                                nil))))))
+
+;;this is the new way to do this.... if only it worked.
 (global-prettify-symbols-mode +1)
 
 ;; these do work but why bother.
 (add-hook 'clojure-mode-hook
           (lambda ()
             (push '("<=" . ?≤) prettify-symbols-alist)
-            (push '(">=" . ?≥) prettify-symbols-alist)))
+            (push '(">=" . ?≥) prettify-symbols-alist)
+                                        ;→
+                                        ;▶
+                                        ;▷
+                                        ;>
+            ;;(push '("->" . ?→) prettify-symbols-alist)
+
+            ;; (push '("->>" .  (?\s (Br . Bl) ?\s (Br . Bl) ?\s
+            ;;                       (Bl . Bl) ?→ (Bc . Br) ?→)) prettify-symbols-alist)
+
+            ;;(push '("->" . ?→) prettify-symbols-alist)
+            ;;(push '("->>" . (?→ ?→)) prettify-symbols-alist)
+            ;;(push '("->" . ?➤) prettify-symbols-alist)
+            ;;(push '("->>" . (?➤ (Bc . Bc) ?➤)) prettify-symbols-alist)
+
+            ;;(push '("->" . (?\s (Br . Bl) ?\s (Bc . Bc) ?🠊)) prettify-symbols-alist)
+            ;;(push '("->" . (?\s (Br . Bl) ?\s (Bc . Bc) ?🠊)) prettify-symbols-alist)
+            ;;(push '("->" . (?- (Br . Bc) ?- (Br . Bc) ?>)) prettify-symbols-alist)
+
+            ;; (push '("->>" .  (?\s (Br . Bl) ?\s (Br . Bl) ?\s
+            ;;                       (Bl . Bl) ?- (Bc . Br) ?- (Bc . Bc) ?>
+            ;;                       (Bc . Bl) ?- (Br . Br) ?>)) prettify-symbols-alist)
+            ))
 
 ;; ;; this almost works. The above works better.
 ;; (add-hook 'clojure-mode-hook
@@ -68,7 +103,7 @@
 ;;To use: M-x align-cljlet
 (require 'align-cljlet)
 
-;;Treat hyphens as a word character when transposing words
+;;Treat hyphens as a word character when transposing word
 (defvar clojure-mode-with-hyphens-as-word-sep-syntax-table
   (let ((st (make-syntax-table clojure-mode-syntax-table)))
     (modify-syntax-entry ?- "w" st)
@@ -107,3 +142,23 @@
 (define-key clojure-mode-map (kbd "C-c C-e") 'warn-when-cider-not-connected)
 (define-key clojure-mode-map (kbd "C-c C-l") 'warn-when-cider-not-connected)
 (define-key clojure-mode-map (kbd "C-c C-r") 'warn-when-cider-not-connected)
+
+
+;;; squiggly-clojure.
+
+(eval-after-load 'flycheck '(flycheck-clojure-setup))
+(add-hook 'after-init-hook #'global-flycheck-mode)
+
+(with-eval-after-load 'flycheck
+  (flycheck-pos-tip-mode))
+
+;; flycheck-pos-tip-error-messages not found.
+;; (eval-after-load 'flycheck
+;; '(setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))
+
+;; instead of flycheck-pos-tip use flycheck-tip.
+;; (require 'flycheck-tip)
+;; (flycheck-tip-use-timer 'verbose)
+
+;; (add-hook 'cider-mode-hook
+;;           (lambda () (setq next-error-function #'flycheck-next-error-function)))
