@@ -67,7 +67,6 @@ If you want to build them yourself you can do that too.
 [They are here](https://github.com/adobe-fonts/source-code-pro)
 
 Note that if you don't want to use emacs or mu4e for mail, mu, gnutls, isync, and Openssl are unnecessary.
-_Although you will need to remove *mu4e-conf.el* and the reference to extensions/mu4e in *.emacs*_
 Additional isync/mbsync/mu4e resources [are here:] (http://www.ict4g.net/adolfo/notes/2014/12/27/EmacsIMAP.html)
 
 Special Files
@@ -95,7 +94,9 @@ Installation
 * Copy mu4e-terminal to ~/bin/  or wherever you keep such things.
 * Link emacs24 to ~/emacs24. `ln -s the-emacs24-directory-in-the-repository ~/emacs24`.
 * link the mu4e elisp to _emacs24/extensions/mu4e_. Mine (installed by home brew) is located here. 
-`mu4e -> /usr/local/Cellar/mu/0.9.16/share/emacs/site-lisp/mu/mu4e`
+`mu4e -> /usr/local/Cellar/mu/0.9.16/share/emacs/site-lisp/mu/mu4e`  You'll have to remove the mu4e
+that is already there, namely 0.9.16. 
+
 
 Evil Mode
 =========
