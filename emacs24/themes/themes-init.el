@@ -10,5 +10,3 @@
 
 (setq custom-safe-themes t)
 
-(load-theme 'strange-deeper-blue t)
-(enable-theme 'strange-deeper-blue)

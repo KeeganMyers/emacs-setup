@@ -5,6 +5,7 @@
       (append (list
 	       "~/emacs24"
 	       "~/emacs24/extensions"
+	       "~/emacs24/extensions/mu4e"
 	       "~/emacs24/config"
 	       "~/emacs24/themes")
 	      load-path))
@@ -18,6 +19,7 @@
 					; Byte-compile-directory makes sure everything
 					; is compiled up to date, and then loads it.
 					;(byte-compile-directory "~/emacs24")
+(byte-compile-directory "~/emacs24/extensions/mu4e")
 (byte-compile-directory "~/emacs24/extensions")
 (byte-compile-directory "~/emacs24/themes")
 					;(byte-compile-directory "~/emacs24/extensions/auto-complete")
@@ -51,4 +53,7 @@
  )
 
 (load "themes-init")
+(load-theme 'strange-deeper-blue t)
+(enable-theme 'strange-deeper-blue)
+
 (load "setup")
