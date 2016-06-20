@@ -1,4 +1,5 @@
 ;; anonymous function longhand.
+(require 'flycheck-pos-tip)
 
 (eval-after-load 'clojure-mode
   '(font-lock-add-keywords
@@ -144,17 +145,22 @@
 (define-key clojure-mode-map (kbd "C-c C-r") 'warn-when-cider-not-connected)
 
 
+;;; this is nice when it works. Currently it is interfering basic functionality
+;;; of loading code.
+
 ;;; squiggly-clojure.
 
-(eval-after-load 'flycheck '(flycheck-clojure-setup))
-(add-hook 'after-init-hook #'global-flycheck-mode)
+;; (eval-after-load 'flycheck '(flycheck-clojure-setup))
+;; (add-hook 'after-init-hook #'global-flycheck-mode)
 
-(with-eval-after-load 'flycheck
-  (flycheck-pos-tip-mode))
-
-;; flycheck-pos-tip-error-messages not found.
 ;; (eval-after-load 'flycheck
-;; '(setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))
+;;   '(setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))
+
+;; (with-eval-after-load 'flycheck
+;;   (flycheck-pos-tip-mode))
+
+;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 
 ;; instead of flycheck-pos-tip use flycheck-tip.
 ;; (require 'flycheck-tip)
