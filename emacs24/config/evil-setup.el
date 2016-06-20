@@ -20,6 +20,7 @@
 (evil-set-initial-state 'magit-log-edit-mode 'emacs)
 (evil-set-initial-state 'nav-mode 'emacs)
 (evil-set-initial-state 'grep-mode 'emacs)
+(evil-set-initial-state 'cider-connections-buffer-mode 'emacs)
 (evil-set-initial-state 'ibuffer-mode 'normal)
 (evil-set-initial-state 'mu4e:compose 'normal)
 

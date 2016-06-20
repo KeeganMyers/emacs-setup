@@ -1,9 +1,13 @@
 (defvar mypackages '(golden-ratio
                      projectile
                      google-translate
+                     langtool which-key
+                     ;; communication
+                     jabber slack
                      ;; clojure
 		     align-cljlet ;autocomplete
                      cider clj-refactor ac-cider
+                     cider-eval-sexp-fu
                      ;; clojure
                      clojure-mode eval-sexp-fu clojure-mode-extra-font-locking ;popup
                      uuid rainbow-delimiters flycheck-clojure flycheck-pos-tip
