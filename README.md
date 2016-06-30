@@ -105,7 +105,8 @@ Installation
 * Link emacs24 to ~/emacs24. `ln -s the-emacs24-directory-in-the-repository ~/emacs24`.
 * link the mu4e elisp to _emacs24/extensions/mu4e_. Mine (installed by home brew) is located here. 
 `mu4e -> /usr/local/Cellar/mu/0.9.16/share/emacs/site-lisp/mu/mu4e`  You'll have to remove the mu4e
-that is already there, namely 0.9.16. 
+that is already there, namely 0.9.16. For Linux I actually just checked out the code and copied it.
+Do what you like [mu is here](https://github.com/djcb/mu)
 
 
 Evil Mode
