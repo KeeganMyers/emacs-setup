@@ -68,7 +68,7 @@ Additional tools needed
 
 * for Spelling and grammar.
     * languagetool -- `brew install languagetool`
-    * hunspell -- `brew install hunspell` -- add dictionaries as needed. on OS X they go in /Library/Spelling/
+    * hunspell -- `brew install hunspell` -- add dictionaries as needed. on OS X they go in /Library/Spelling/ in OSX and /usr/share/hunspell in Arch Linux. It's probably the same in other linux distros.
     * hunspell dictionaries  [get them here!](https://github.com/EricGebhart/Hunspell-dictionaries)
 
 * *SourceCodePro Fonts* -- Copy the ones in fonts/ to /Library/fonts/, (on OS X). 
